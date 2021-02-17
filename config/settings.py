@@ -123,7 +123,7 @@ import django_heroku
 django_heroku.settings(locals())
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
-# STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles')) # new
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles')) # new
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
